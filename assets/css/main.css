@@ -1633,7 +1633,7 @@
 		}
 
 	a {
-		color: #6cc091;
+		color: #38b6ff;
 		text-decoration: underline;
 	}
 
@@ -1974,10 +1974,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: #38b6ff;
 		border-radius: 10px;
 		border: none;
-		border: solid 2px #8dcca9;
+		border: solid 2px #ffffff;
 		color: #fff;
 		display: block;
 		outline: 0;
@@ -2001,8 +2001,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4bae77;
-			box-shadow: 0 0 0 1px #4bae77;
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #ffffff;
 		}
 
 	.select-wrapper {
@@ -2090,7 +2090,7 @@
 			input[type="radio"] + label:before {
 				background: rgba(144, 144, 144, 0.075);
 				border-radius: 0;
-				border: solid 1px #8dcca9;
+				border: solid 1px #ffffff;
 				content: '';
 				display: inline-block;
 				height: 1.65em;
@@ -2104,16 +2104,16 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #6cc091;
-			border-color: #6cc091;
+			background: #38b6ff;
+			border-color: #38b6ff;
 			color: #ffffff;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #6cc091;
-			box-shadow: 0 0 0 1px #6cc091;
+			border-color: #38b6ff;
+			box-shadow: 0 0 0 1px #38b6ff;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2170,7 +2170,7 @@
 		}
 
 		.box.person {
-			border: solid 1px #8dcca9;
+			border: solid 1px #ffffff;
 			padding: 3em 1.5em;
 		}
 
@@ -2526,8 +2526,8 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #6cc091;
-		color: #6cc091 !important;
+		box-shadow: inset 0 0 0 3px #38b6ff;
+		color: #38b6ff!important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2557,7 +2557,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: #ffffff;
 		}
 
 		input[type="submit"].icon,
@@ -2641,7 +2641,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #6cc091;
+			background-color: #38b6ff;
 			color: #ffffff !important;
 		}
 
@@ -2697,7 +2697,7 @@
 	}
 
 		.subpage #header {
-			background: #6cc091;
+			background: #38b6ff;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2838,7 +2838,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #6cc091;
+		background: #38b6ff;
 		color: #daefe3;
 		height: 100%;
 		max-width: 80%;
@@ -2857,7 +2857,7 @@
 		}
 
 		#navPanel a:not(.close) {
-			border-top: solid 1px #8dcca9;
+			border-top: solid 1px #ffffff;
 			color: #daefe3;
 			font-weight: 600;
 			display: block;
@@ -2960,7 +2960,7 @@
 		}
 
 		#banner .icon {
-			color: #6cc091;
+			color: #38b6ff;
 			font-size: 2em;
 		}
 
@@ -3111,7 +3111,7 @@
 
 	#footer {
 		padding: 6em 0;
-		background: #6cc091;
+		background: #38b6ff;
 		color: #fff;
 		text-align: center;
 	}
