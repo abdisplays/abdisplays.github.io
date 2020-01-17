@@ -5,13 +5,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><strong>Printwebs</strong> by AB Displays</a>
+					<a href="index.html" style="font-family: Amaranth" class="logo"><strong>Printwebs</strong></a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="features.html">Features</a>
@@ -27,7 +28,7 @@
 			<section id="banner">
 				<div class="inner">
 					<header>
-						<h1>Welcome to Printwebs</h1>
+						<h1 style="font-family: Amaranth">Welcome to Printwebs</h1>
 					</header>
 
 					<div class="flex">
@@ -72,7 +73,7 @@
 							</header>
 							<p>Packages starting at £19.99+VAT per month</p>
 							<footer>
-								<a href="#" class="button">Start Your Trial Now</a>
+								<button type="button" data-target="#vevs-widget" data-id="30" data-affid="4664">Start Trial</button>
 							</footer>
 						</article>
 						<article style="margin-top: 6rem;">
@@ -128,6 +129,14 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+			(function (d,s,id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "https://www.vevs.com/partners-sdk.js"; js.async = true; js.defer = true;
+				fjs.parentNode.insertBefore(js, fjs);
+				})(document,"script","vevs-sdk");
+			</script>
 	</body>
 </html>
