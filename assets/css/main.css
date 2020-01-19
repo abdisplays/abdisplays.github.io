@@ -2692,6 +2692,10 @@
 		}
 
 /* Header */
+	.header img {
+		max-width: 100%; 
+		height: auto;
+	}
 
 	.subpage {
 		padding-top: 44px;
