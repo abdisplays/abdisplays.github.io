@@ -3101,10 +3101,12 @@
 		}
 
 /* Footer */
-
+	 .input-footer::placeholder {
+		 color: white;
+	 }
 	#footer {
 		padding: 6em 0;
-		background: #38b6ff;
+			background: #8c52ff;
 		color: #fff;
 		text-align: center;
 	}
