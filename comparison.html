@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Printwebs</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	<style>
+		/* DIRTY Responsive pricing table CSS */
+
+		/*
+- make mobile switch sticky
+*/
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			outline: 0;
+		}
+
+		body {
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			padding: 14px;
+		}
+
+		article {
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+			height: 1000px;
+			position: relative;
+		}
+
+		ul {
+			display: flex;
+			top: 0px;
+			z-index: 10;
+			padding-bottom: 14px;
+		}
+
+		li {
+			list-style: none;
+			flex: 1;
+		}
+
+		li:last-child {
+			border-right: 1px solid #DDD;
+		}
+
+		button {
+			width: 100%;
+			border: 1px solid #DDD;
+			border-right: 0;
+			border-top: 0;
+			padding: 10px;
+			background: #FFF;
+			font-size: 14px;
+			font-weight: bold;
+			height: 60px;
+			color: #999
+		}
+
+		li.active button {
+			background: #F5F5F5;
+			color: #000;
+		}
+
+		table {
+			border-collapse: collapse;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		th {
+			background: #F5F5F5;
+			display: none;
+		}
+
+		td,
+		th {
+			height: 53px
+		}
+
+		td,
+		th {
+			border: 1px solid #DDD;
+			padding: 10px;
+			empty-cells: show;
+		}
+
+		td,
+		th {
+			text-align: left;
+		}
+
+		td+td,
+		th+th {
+			text-align: center;
+			display: none;
+		}
+
+		td.default {
+			display: table-cell;
+		}
+
+		.bg-purple {
+			border-top: 3px solid #A32362;
+		}
+
+		.bg-blue {
+			border-top: 3px solid #0097CF;
+		}
+
+		.sep {
+			background: #F5F5F5;
+			font-weight: bold;
+		}
+
+		.txt-l {
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.txt-top {
+			position: relative;
+			top: -9px;
+			left: -2px;
+		}
+
+		.tick {
+			font-size: 18px;
+			color: #2CA01C;
+		}
+
+		.hide {
+			border: 0;
+			background: none;
+		}
+
+		@media (min-width: 640px) {
+			ul {
+				display: none;
+			}
+
+			td,
+			th {
+				display: table-cell !important;
+			}
+
+			td,
+			th {
+				width: 330px;
+
+			}
+
+			td+td,
+			th+th {
+				width: auto;
+			}
+		}
+	</style>
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" style="font-family: Amaranth" class="logo"><strong>Printwebs</strong></a>
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="features.html">Features</a>
+				<a href="pricing.html">Pricing</a>
+				<a href="meet-the-team.html">Meet The Team</a>
+				<a href="">Get Started</a>
+			</nav>
+			<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<!-- DIRTY Responsive pricing table HTML -->
+
+	<section class="wrapper"	>
+		<div class="inner">
+		<header class="align-center">
+			<h2 style="font-family: Amaranth">Feature Comparison</h2>
+		</header>
+		<ul>
+			<li class="bg-purple">
+				<button>Bronze</button>
+			</li>
+			<li class="bg-blue">
+				<button>Silver</button>
+			</li>
+			<li class="bg-blue active">
+				<button>Gold</button>
+			</li>
+		</ul>
+
+		<table>
+			<thead>
+				<tr>
+					<th class="hide"></th>
+					<th class="bg-purple">Bronze</th>
+					<th class="bg-blue">Silver</th>
+					<th class="bg-blue default">Gold</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Setup Fee (one-off payment)</td>
+					<td><span class="txt-top">&pound;</span><span class="txt-l">89.99</span></td>
+					<td class="default"><span class="txt-top">&pound;</span><span class="txt-l">89.99</span></td>
+					<td><span class="txt-top">&pound;</span><span class="txt-l">89.99</span></td>
+				</tr>
+				<tr>
+					<td>Monthly price</td>
+					<td><span class="txt-top">&pound;</span><span class="txt-l">9.99</span></td>
+					<td class="default"><span class="txt-top">&pound;</span><span class="txt-l">27.99</span></td>
+					<td><span class="txt-top">&pound;</span><span class="txt-l">79.99</span></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="sep">Get started easily</td>
+				</tr>
+				<tr>
+					<td>21 Day Free Trial</td>
+					<td><span class="tick">&#10004;</span></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>PrintWebs Web Builder Tool</td>
+					<td><span class="tick">&#10004;</span></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Access to our Printwebs templates</td>
+					<td><span class="tick">&#10004;</span></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Access to our SEO tools</td>
+					<td><span class="tick">&#10004;</span></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="sep">Website Managment</td>
+				</tr>
+				<tr>
+					<td>Fully responsive website created with your content and images</td>
+					<td></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Highly SEO optimized by our team of experts</td>
+					<td></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Automated Blogs and News Articles</td>
+					<td></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Bespoke Website Design</td>
+					<td></td>
+					<td class="default"></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>E-Commerce</td>
+					<td></td>
+					<td class="default"></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="sep">Support</td>
+				</tr>
+				<tr>
+					<td>Initial Setup</td>
+					<td><span class="tick">&#10004;</span></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+				<tr>
+					<td>Full Content Managment</td>
+					<td></td>
+					<td class="default"><span class="tick">&#10004;</span></td>
+					<td><span class="tick">&#10004;</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$("ul").on("click", "li", function() {
+			var pos = $(this).index() + 2;
+			$("tr").find('td:not(:eq(0))').hide();
+			$('td:nth-child(' + pos + ')').css('display', 'table-cell');
+			$("tr").find('th:not(:eq(0))').hide();
+			$('li').removeClass('active');
+			$(this).addClass('active');
+		});
+		var mediaQuery = window.matchMedia('(min-width: 640px)');
+
+		// Add a listen event
+		mediaQuery.addListener(doSomething);
+
+		// Function to do something with the media query
+		function doSomething(mediaQuery) {
+			if (mediaQuery.matches) {
+				$('.sep').attr('colspan', 4);
+			} else {
+				$('.sep').attr('colspan', 2);
+			}
+		}
+
+		// On load
+		doSomething(mediaQuery);
+	</script>
+</body>
+
+</html>
