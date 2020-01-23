@@ -218,6 +218,19 @@
 
 	}
 
+	.teal-banner {
+			background-color: #62e2e6;
+			height: 5rem;
+	}
+
+		@media screen and (max-width: 520px) {
+			.teal-banner {
+					background-color: #62e2e6;
+					height: 8rem;
+			}
+		}
+
+
 /* Grid */
 
 	.row {
