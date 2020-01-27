@@ -14,286 +14,306 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
 	<style>
+		.blog-post a img,
+		.box-entry-nav-holder,
+		.btn,
+		.btn-arrow,
+		.btn-close,
+		.btn-contact-widget,
+		.btn-search,
+		.btn-websites,
+		.catalogue-overlay,
+		.contact-options a,
+		.contact-type a .ico,
+		.contact-widget,
+		.contact-widget-quote,
+		.dialogue-message-content a,
+		.footer-creds p a,
+		.footer-nav li a,
+		.generated-logos a,
+		.generated-logos strong,
+		.industry-popup,
+		.industry-popup a,
+		.nav .dropdown-menu,
+		.nav .dropdown-toggle:after,
+		.nav>li>a,
+		.navbar,
+		.online-business a .ico,
+		.onoffswitch-inner,
+		.overlay,
+		.payments a,
+		.payments a img,
+		.search-field,
+		.socials a,
+		.socials-alt a,
+		.swiper-button-next,
+		.swiper-button-prev,
+		.swiper-pagination-bullet {
+			transition: all .3s ease
+		}
 
-.blog-post a img,
-.box-entry-nav-holder,
-.btn,
-.btn-arrow,
-.btn-close,
-.btn-contact-widget,
-.btn-search,
-.btn-websites,
-.catalogue-overlay,
-.contact-options a,
-.contact-type a .ico,
-.contact-widget,
-.contact-widget-quote,
-.dialogue-message-content a,
-.footer-creds p a,
-.footer-nav li a,
-.generated-logos a,
-.generated-logos strong,
-.industry-popup,
-.industry-popup a,
-.nav .dropdown-menu,
-.nav .dropdown-toggle:after,
-.nav>li>a,
-.navbar,
-.online-business a .ico,
-.onoffswitch-inner,
-.overlay,
-.payments a,
-.payments a img,
-.search-field,
-.socials a,
-.socials-alt a,
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination-bullet {
-    transition: all .3s ease
-}
-
-.badge-fee strong,
-.btn-primary,
-.btn-quaternary,
-.btn-secondary,
-.catalogue-item-name,
-.compare-cell .h5,
-.intro .h1,
-.intro p,
-.intro-business-content .h1,
-.intro-business-content p,
-.intro-features .h1,
-.intro-features .h1 span,
-.intro-main h1,
-.intro-main p,
-.monthly-price span,
-.pagination>li>a,
-.pagination>li>span,
-.plan-price strong,
-.statistics p strong,
-.statistics-secondary p strong,
-.yearly-price span {
-    font-family: Rubik, Arial, sans-serif
-}
-
-
-.blog-post-image img,
-.catalogue-item-head img,
-.entry-boost-image img,
-.faq-content .content-entry img,
-.generated-logos a img,
-.generated-logos strong img,
-.news-item-image img,
-.section-addons img,
-.section-custom-design img,
-.section-design-touches img,
-.section-edit img,
-.section-features-images img,
-.section-get-social img,
-.section-language img,
-.section-migrate img,
-.section-no-fees img,
-.section-payment-options img,
-.section-personalized-logo img,
-.section-request img,
-.section-seo-image img,
-.section-seo-tools .section-image img,
-.section-works img,
-.send-sms-image img {
-    display: block;
-    max-width: 100%;
-    height: auto
-}
-
-.advantage-icon:before,
-.box-icon:before,
-.catalogue-overlay:before,
-.contact-options a:before,
-.contact-type a:before,
-.entry-head .entry-head-ico:before,
-.industry-icon:before,
-.on-demand-icon:before,
-.overlay:before,
-.payments a:before,
-.plan-content:before,
-.section-grow:before,
-.socials-alt a:before,
-.solution-icon:before,
-.statistic-icon:before,
-.widget-contact-nav a:before,
-.works-icon:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle
-}
-
-.advantage-icon .ico,
-.box-icon .ico,
-.catalogue-overlay .btn-holder,
-.contact-options a .ico,
-.contact-type a .ico,
-.entry-head .entry-head-ico .ico,
-.industry-icon .ico,
-.on-demand-icon .ico,
-.overlay .btn,
-.payments a img,
-.plan-content p,
-.section-grow .section-content,
-.socials-alt a .ico,
-.solution-icon i,
-.statistic-icon .ico,
-.widget-contact-nav a .ico,
-.works-icon .ico {
-    display: inline-block;
-    max-height: 100%;
-    vertical-align: middle
-}
+		.badge-fee strong,
+		.btn-primary,
+		.btn-quaternary,
+		.btn-secondary,
+		.catalogue-item-name,
+		.compare-cell .h5,
+		.intro .h1,
+		.intro p,
+		.intro-business-content .h1,
+		.intro-business-content p,
+		.intro-features .h1,
+		.intro-features .h1 span,
+		.intro-main h1,
+		.intro-main p,
+		.monthly-price span,
+		.pagination>li>a,
+		.pagination>li>span,
+		.plan-price strong,
+		.statistics p strong,
+		.statistics-secondary p strong,
+		.yearly-price span {
+			font-family: Rubik, Arial, sans-serif
+		}
 
 
-.section-catalogue {
-    padding: 90px 0
-}
+		.blog-post-image img,
+		.catalogue-item-head img,
+		.entry-boost-image img,
+		.faq-content .content-entry img,
+		.generated-logos a img,
+		.generated-logos strong img,
+		.news-item-image img,
+		.section-addons img,
+		.section-custom-design img,
+		.section-design-touches img,
+		.section-edit img,
+		.section-features-images img,
+		.section-get-social img,
+		.section-language img,
+		.section-migrate img,
+		.section-no-fees img,
+		.section-payment-options img,
+		.section-personalized-logo img,
+		.section-request img,
+		.section-seo-image img,
+		.section-seo-tools .section-image img,
+		.section-works img,
+		.send-sms-image img {
+			display: block;
+			max-width: 100%;
+			height: auto
+		}
 
-.section-catalogue .lead {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 40px
-}
+		.advantage-icon:before,
+		.box-icon:before,
+		.catalogue-overlay:before,
+		.contact-options a:before,
+		.contact-type a:before,
+		.entry-head .entry-head-ico:before,
+		.industry-icon:before,
+		.on-demand-icon:before,
+		.overlay:before,
+		.payments a:before,
+		.plan-content:before,
+		.section-grow:before,
+		.socials-alt a:before,
+		.solution-icon:before,
+		.statistic-icon:before,
+		.widget-contact-nav a:before,
+		.works-icon:before {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle
+		}
 
-.section-catalogue .buttons {
-    margin-bottom: 75px
-}
+		.advantage-icon .ico,
+		.box-icon .ico,
+		.catalogue-overlay .btn-holder,
+		.contact-options a .ico,
+		.contact-type a .ico,
+		.entry-head .entry-head-ico .ico,
+		.industry-icon .ico,
+		.on-demand-icon .ico,
+		.overlay .btn,
+		.payments a img,
+		.plan-content p,
+		.section-grow .section-content,
+		.socials-alt a .ico,
+		.solution-icon i,
+		.statistic-icon .ico,
+		.widget-contact-nav a .ico,
+		.works-icon .ico {
+			display: inline-block;
+			max-height: 100%;
+			vertical-align: middle
+		}
 
-.section-catalogue .section-content {
-    text-align: center
-}
 
-.section-catalogue .section-content .h2 {
-    margin: 0 0 35px
-}
+		.section-catalogue {
+			padding: 90px 0
+		}
 
-.section-catalogue .section-content p {
-    margin-bottom: 75px
-}
+		.section-catalogue .lead {
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 40px
+		}
 
-.buttons-secondary .btn-websites:hover {
-    box-shadow: 0 0 0 0 transparent;
-    background-color: #ecf2f6
-}
+		.section-catalogue .buttons {
+			margin-bottom: 75px
+		}
 
-.buttons-secondary .btn-websites {
-    border-color: #ecf2f6
-}
+		.section-catalogue .section-content {
+			text-align: center
+		}
 
-.catalogue {
-    max-width: 1145px;
-    margin: 0 auto
-}
+		.section-catalogue .section-content .h2 {
+			margin: 0 0 35px
+		}
 
-.catalogue ul {
-    list-style: none;
-    font-size: 0;
-    text-align: center;
-    margin: 0 -15px;
-    padding: 0
-}
+		.section-catalogue .section-content p {
+			margin-bottom: 75px
+		}
 
-.catalogue li {
-    width: 33.3333%;
-    display: inline-block;
-    font-size: 18px;
-    padding: 0 15px 45px;
-    vertical-align: top
-}
+		.buttons-secondary .btn-websites:hover {
+			box-shadow: 0 0 0 0 transparent;
+			background-color: #ecf2f6
+		}
 
-.catalogue-item {
-    border: 1px solid #dce4e9;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .08);
-    background-color: #fff
-}
+		.buttons-secondary .btn-websites {
+			border-color: #ecf2f6
+		}
 
-.catalogue-item-head {
-    cursor: pointer;
-    position: relative
-}
+		.catalogue {
+			max-width: 1145px;
+			margin: 0 auto
+		}
 
-.catalogue-item-head:hover .catalogue-overlay {
-    opacity: 1;
-    visibility: visible
-}
+		.catalogue ul {
+			list-style: none;
+			font-size: 0;
+			text-align: center;
+			margin: 0 -15px;
+			padding: 0
+		}
 
-.catalogue-item-body {
-    text-align: left;
-    padding: 20px 20px 15px
-}
+		.catalogue li {
+			width: 33.3333%;
+			display: inline-block;
+			font-size: 0.8rem;
+			padding: 0 15px 45px;
+			vertical-align: top
+		}
 
-.catalogue-item-name {
-    font-size: 26px;
-    color: #1e81c7;
-    line-height: 1.2
-}
+		@media screen and (max-width: 520px) {
+			.catalogue li {
+				width: 100%;
+			}
+		}
 
-.catalogue-item-desc {
-    color: #363b3e;
-    font-weight: 600
-}
+		.catalogue-item {
+			border: 1px solid #dce4e9;
+			box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .08);
+			background-color: #fff
+		}
 
-.catalogue-overlay {
-    vertical-align: middle;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(25, 27, 28, .7);
-    opacity: 0;
-    visibility: hidden;
-    font-size: 0
-}
+		.catalogue-item-head {
+			cursor: pointer;
+			position: relative
+		}
 
-.catalogue-overlay .btn-holder {
-    padding-top: 30px
-}
+		.catalogue-item-head:hover .catalogue-overlay {
+			opacity: 1;
+			visibility: visible
+		}
 
-.catalogue-overlay .btn-holder .btn {
-    min-width: 255px;
-    margin-top: 30px
-}
+		.catalogue-item-body {
+			text-align: left;
+			padding: 20px 20px 15px
+		}
 
-.catalogue-overlay .btn-holder .btn-link {
-    color: #fff;
-    font-size: 18px;
-    min-width: 0
-}
+		@media screen and (max-width: 520px) {
+			.catalogue-item-body {
+				text-align: left;
+				padding: 10px 10px 15px !important;
+			}
+		}
 
-.catalogue-overlay .btn-holder .btn-link:hover {
-    text-decoration: none;
-    color: #1e81c7
-}
-.catalogue-secondary .catalogue-overlay .btn-holder {
-    padding-top: 0
-}
+		.catalogue-item-name {
+			font-size: 1rem;
+			color: #1e81c7;
+			line-height: 1.2
+		}
 
-.catalogue-secondary .catalogue-item-body {
-    padding: 30px
-}
+		.catalogue-item-desc {
+			color: #363b3e;
+			font-weight: 600;
+			margin-top: 0.5rem;
+		}
 
-.section-catalogue-secondary {
-    background-color: #ecf2f6
-}
+		.catalogue-overlay {
+			vertical-align: middle;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(25, 27, 28, .7);
+			opacity: 0;
+			visibility: hidden;
+			font-size: 0
+		}
 
-.col-md-8 {
-	max-width: 100% !important;
-}
+		.catalogue-overlay .btn-holder {
+			padding-top: 30px
+		}
 
-img {
-	max-height: 35rem;
-    width: 100%;
-}
+		.catalogue-overlay .btn-holder .btn {
+			min-width: 255px;
+			margin-top: 30px
+		}
+
+		.catalogue-overlay .btn-holder .btn-link {
+			color: #fff;
+			font-size: 0.8rem;
+			min-width: 0
+		}
+
+		.catalogue-overlay .btn-holder .btn-link:hover {
+			text-decoration: none;
+			color: #1e81c7
+		}
+
+		.catalogue-secondary .catalogue-overlay .btn-holder {
+			padding-top: 0
+		}
+
+		.catalogue-secondary .catalogue-item-body {
+			padding: 30px
+		}
+
+		@media screen and (max-width: 520px) {
+			.catalogue-secondary .catalogue-item-body {
+				padding: 0;
+			}
+		}
+
+		.section-catalogue-secondary {
+			background-color: #ecf2f6
+		}
+
+		.col-md-8 {
+			max-width: 100% !important;
+		}
+
+		img {
+			max-height: 35rem;
+			width: 100%;
+		}
 	</style>
 </head>
 
@@ -427,7 +447,10 @@ img {
 				</div>
 			</div>
 
-
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 </body>
 
 </html>
