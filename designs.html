@@ -314,6 +314,10 @@
 			max-height: 35rem;
 			width: 100%;
 		}
+
+		.catalogue-item {
+			min-height: 40rem;
+		}
 	</style>
 </head>
 
@@ -350,7 +354,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial1.png" alt="Printwebs Design Template #1">
+									<img class="lazy" data-src="images/trial1.jpg" alt="Printwebs Design Template #1">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/4/" class="btn btn-primary" target="_blank">view demo</a>
@@ -366,7 +370,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial2.png" alt="Printwebs Design Template #2">
+									<img class="lazy" data-src="images/trial2.jpg" alt="Printwebs Design Template #2">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/2/" class="btn btn-primary" target="_blank">view demo</a>
@@ -382,7 +386,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial3.png" alt="Printwebs Design Template #3">
+									<img class="lazy" data-src="images/trial3.jpg" alt="Printwebs Design Template #3">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/8/" class="btn btn-primary" target="_blank">view demo</a>
@@ -398,7 +402,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial4.png" alt="Printwebs Design Template #4">
+									<img class="lazy" data-src="images/trial4.jpg" alt="Printwebs Design Template #4">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/9/" class="btn btn-primary" target="_blank">view demo</a>
@@ -414,7 +418,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial5.png" alt="Printwebs Design Template #5">
+									<img class="lazy" data-src="images/trial5.jpg" alt="Printwebs Design Template #5">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/10/" class="btn btn-primary" target="_blank">view demo</a>
@@ -430,7 +434,7 @@
 						<li>
 							<div class="catalogue-item">
 								<div class="catalogue-item-head">
-									<img src="images/trial6.png" alt="Printwebs Design Template #6">
+									<img class="lazy" data-src="images/trial6.jpg" alt="Printwebs Design Template #6">
 									<div class="catalogue-overlay">
 										<div class="btn-holder">
 											<a href="http://trials.freedemo.website/Printwebs_Demo/5/" class="btn btn-primary" target="_blank">view demo</a>
@@ -447,10 +451,41 @@
 				</div>
 			</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script class="lazy" data-src="assets/js/jquery.min.js"></script>
+			<script class="lazy" data-src="assets/js/skel.min.js"></script>
+			<script class="lazy" data-src="assets/js/util.js"></script>
+			<script class="lazy" data-src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var lazyloadImages = document.querySelectorAll("img.lazy");
+					var lazyloadThrottleTimeout;
+
+					function lazyload() {
+						if (lazyloadThrottleTimeout) {
+							clearTimeout(lazyloadThrottleTimeout);
+						}
+
+						lazyloadThrottleTimeout = setTimeout(function() {
+							var scrollTop = window.pageYOffset;
+							lazyloadImages.forEach(function(img) {
+								if (img.offsetTop < (window.innerHeight + scrollTop)) {
+									img.src = img.dataset.src;
+									img.classList.remove('lazy');
+								}
+							});
+							if (lazyloadImages.length == 0) {
+								document.removeEventListener("scroll", lazyload);
+								window.removeEventListener("resize", lazyload);
+								window.removeEventListener("orientationChange", lazyload);
+							}
+						}, 20);
+					}
+					lazyload();
+					document.addEventListener("scroll", lazyload);
+					window.addEventListener("resize", lazyload);
+					window.addEventListener("orientationChange", lazyload);
+				});
+			</script>
 </body>
 
 </html>
