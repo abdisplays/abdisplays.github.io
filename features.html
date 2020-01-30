@@ -11,6 +11,301 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+		<style>
+			.blog-post a img,
+			.box-entry-nav-holder,
+			.btn,
+			.btn-arrow,
+			.btn-close,
+			.btn-contact-widget,
+			.btn-search,
+			.btn-websites,
+			.catalogue-overlay,
+			.contact-options a,
+			.contact-type a .ico,
+			.contact-widget,
+			.contact-widget-quote,
+			.dialogue-message-content a,
+			.footer-creds p a,
+			.footer-nav li a,
+			.generated-logos a,
+			.generated-logos strong,
+			.industry-popup,
+			.industry-popup a,
+			.nav .dropdown-menu,
+			.nav .dropdown-toggle:after,
+			.nav>li>a,
+			.navbar,
+			.online-business a .ico,
+			.onoffswitch-inner,
+			.overlay,
+			.payments a,
+			.payments a img,
+			.search-field,
+			.socials a,
+			.socials-alt a,
+			.swiper-button-next,
+			.swiper-button-prev,
+			.swiper-pagination-bullet {
+				transition: all .3s ease
+			}
+
+			.badge-fee strong,
+			.btn-primary,
+			.btn-quaternary,
+			.btn-secondary,
+			.catalogue-item-name,
+			.compare-cell .h5,
+			.intro .h1,
+			.intro p,
+			.intro-business-content .h1,
+			.intro-business-content p,
+			.intro-features .h1,
+			.intro-features .h1 span,
+			.intro-main h1,
+			.intro-main p,
+			.monthly-price span,
+			.pagination>li>a,
+			.pagination>li>span,
+			.plan-price strong,
+			.statistics p strong,
+			.statistics-secondary p strong,
+			.yearly-price span {
+				font-family: Rubik, Arial, sans-serif
+			}
+
+
+			.blog-post-image img,
+			.catalogue-item-head img,
+			.entry-boost-image img,
+			.faq-content .content-entry img,
+			.generated-logos a img,
+			.generated-logos strong img,
+			.news-item-image img,
+			.section-addons img,
+			.section-custom-design img,
+			.section-design-touches img,
+			.section-edit img,
+			.section-features-images img,
+			.section-get-social img,
+			.section-language img,
+			.section-migrate img,
+			.section-no-fees img,
+			.section-payment-options img,
+			.section-personalized-logo img,
+			.section-request img,
+			.section-seo-image img,
+			.section-seo-tools .section-image img,
+			.section-works img,
+			.send-sms-image img {
+				display: block;
+				max-width: 100%;
+				height: auto
+			}
+
+			.advantage-icon:before,
+			.box-icon:before,
+			.catalogue-overlay:before,
+			.contact-options a:before,
+			.contact-type a:before,
+			.entry-head .entry-head-ico:before,
+			.industry-icon:before,
+			.on-demand-icon:before,
+			.overlay:before,
+			.payments a:before,
+			.plan-content:before,
+			.section-grow:before,
+			.socials-alt a:before,
+			.solution-icon:before,
+			.statistic-icon:before,
+			.widget-contact-nav a:before,
+			.works-icon:before {
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle
+			}
+
+			.advantage-icon .ico,
+			.box-icon .ico,
+			.catalogue-overlay .btn-holder,
+			.contact-options a .ico,
+			.contact-type a .ico,
+			.entry-head .entry-head-ico .ico,
+			.industry-icon .ico,
+			.on-demand-icon .ico,
+			.overlay .btn,
+			.payments a img,
+			.plan-content p,
+			.section-grow .section-content,
+			.socials-alt a .ico,
+			.solution-icon i,
+			.statistic-icon .ico,
+			.widget-contact-nav a .ico,
+			.works-icon .ico {
+				display: inline-block;
+				max-height: 100%;
+				vertical-align: middle
+			}
+
+
+			.section-catalogue {
+				padding: 90px 0
+			}
+
+			.section-catalogue .lead {
+				text-align: center;
+				font-size: 1rem;
+				font-weight: 400;
+				margin-bottom: 40px
+			}
+
+			.section-catalogue .buttons {
+				margin-bottom: 75px
+			}
+
+			.section-catalogue .section-content {
+				text-align: center
+			}
+
+			.section-catalogue .section-content .h2 {
+				margin: 0 0 35px
+			}
+
+			.section-catalogue .section-content p {
+				margin-bottom: 75px
+			}
+
+			.buttons-secondary .btn-websites {
+				border-color: #ecf2f6
+			}
+
+			.catalogue {
+				max-width: 1145px;
+				margin: 0 auto
+			}
+
+			.catalogue ul {
+				list-style: none;
+				font-size: 0;
+				text-align: center;
+				margin: 0 -15px;
+				padding: 0
+			}
+
+			.catalogue li {
+				width: 33.3333%;
+				display: inline-block;
+				font-size: 0.8rem;
+				padding: 0 15px 45px;
+				vertical-align: top
+			}
+
+			@media screen and (max-width: 520px) {
+				.catalogue li {
+					width: 100%;
+				}
+			}
+
+			.catalogue-item {
+				border: 1px solid #dce4e9;
+				box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .08);
+				background-color: #fff
+				min-height: 32rem!important;
+			}
+
+			.catalogue-item-head {
+				cursor: pointer;
+				position: relative
+			}
+
+			.catalogue-item-body {
+				text-align: left;
+				padding: 20px 20px 15px
+			}
+
+			@media screen and (max-width: 520px) {
+				.catalogue-item-body {
+					text-align: left;
+					padding: 10px 10px 15px !important;
+				}
+			}
+
+			.catalogue-item-name {
+				font-size: 1rem;
+				color: #1e81c7;
+				line-height: 1.2
+			}
+
+			.catalogue-item-desc {
+				color: #363b3e;
+				font-weight: 600;
+				margin-top: 0.5rem;
+			}
+
+			.catalogue-overlay {
+				vertical-align: middle;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(25, 27, 28, .7);
+				opacity: 0;
+				visibility: hidden;
+				font-size: 0
+			}
+
+			.catalogue-overlay .btn-holder {
+				padding-top: 30px
+			}
+
+			.catalogue-overlay .btn-holder .btn {
+				min-width: 255px;
+				margin-top: 30px
+			}
+
+			.catalogue-overlay .btn-holder .btn-link {
+				color: #fff;
+				font-size: 0.8rem;
+				min-width: 0
+			}
+
+			.catalogue-secondary .catalogue-overlay .btn-holder {
+				padding-top: 0
+			}
+
+			.catalogue-secondary .catalogue-item-body {
+				padding: 30px
+			}
+
+			@media screen and (max-width: 520px) {
+				.catalogue-secondary .catalogue-item-body {
+					padding: 0;
+				}
+			}
+
+			.section-catalogue-secondary {
+				background-color: #ecf2f6
+			}
+
+			.col-md-8 {
+				max-width: 100% !important;
+			}
+
+			img {
+				width: 15rem;
+		    height: 15rem;
+		    margin-left: auto;
+		    margin-right: auto;
+				background-color: #ffffff;
+			}
+
+			.catalogue-item {
+				min-height: 32rem!important;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -38,53 +333,97 @@
 						<p>A few clicks away from a feature packed website</p>
 					</header>
 
-					<!-- Intro -->
-						<div class="row">
-							<section class="6u 12u$(medium)">
+					<div class="col-md-8">
+						<div class="catalogue catalogue-secondary">
+							<ul>
+								<li>
+									<div class="catalogue-item">
+										<div class="catalogue-item-head">
+											<img src="images/web.png">
+											<div class="catalogue-overlay">
+												<div class="btn-holder">
 
-								<h2>Design</h2>
-								<p><span class="icon fa-pencil"></span> Our <strong>solution</strong> combines modern responsive designs that will adapt to your device, first-class content and cutting-edge technology with excellent value for money.</p>
-							</section>
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Templates</h3>
-								<p>We have a whole library of different design templates for you to use, want something a bit more bespoke? just get in touch.</p>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Portfolio</h3>
-								<p>Lets show of the work <strong>You</strong> have done, upload images of all your work for the world to see.</p>
-							</section>
-						</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalogue-item-body">
+											<div class="catalogue-item-name">Fully Managed Website</div>
+											<div style="margin-top: 2rem; letter-spacing: 1.5px; line-height: 2;"> Your very own state of the art website, fully managed and looked after by our experts <div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="catalogue-item">
+										<div class="catalogue-item-head">
+											<img src="images/seo.png" >
+											<div class="catalogue-overlay">
+												<div class="btn-holder">
 
-						<div class="row">
-							<section class="6u 12u$(medium)">
-								<h2>Content</h2>
-								<p><span class="icon fa-user"></span> Website <strong>Text</strong> is fully customizable, you have access to edit your site anyway you see fit, if you have opted for a managed solution we will work with you to create the perfect content for your site.</p>
-							</section>
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Images</h3>
-								<p>We recommend uploading images of you work often, add to the image gallery yourself or let us take care of it.</p>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Widgets</h3>
-								<p>Add something extra for your clients, such as news feeds or square meter calculator widgets </p>
-							</section>
-						</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalogue-item-body">
+											<div class="catalogue-item-name">SEO</div>
+											<div style="margin-top: 2rem; letter-spacing: 1.5px; line-height: 2;"> Our team of experts will create an SEO strategy to help prospects find you on google with ease.
+												For example searching "Budget Roller Banners London" you may not currently appear on the 1st page, however we can make that happen. <div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="catalogue-item">
+										<div class="catalogue-item-head">
+											<img src="images/responsive.png">
+											<div class="catalogue-overlay">
+												<div class="btn-holder">
 
-						<div class="row">
-							<section class="6u 12u$(medium)">
-								<h2>Search Engines</h2>
-								<p><span class="icon fa-desktop"> Getting<strong> Spotted</strong> is difficule these days, we will work with you to get you searchable, we offer a phrase approach to opitmisation.</p>
-							</section>
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Phrase Approach</h3>
-								<p>We can optimize 5 key phrases which focus around your key services and location to ensure you site is visible in the relevant searches</p>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Reporting</h3>
-								<p>After you have been up and running for a few months, we will send monthly reports highlighting the position of your search results.</p>
-							</section>
+												</div>
+											</div>
+										</div>
+										<div class="catalogue-item-body">
+											<div class="catalogue-item-name">Responsive Design</div>
+											<div style="margin-top: 2rem; letter-spacing: 1.5px; line-height: 2;"> Websites designed for desktop PC's are not enough anymore, everyone has a smartphone or tablet, but not everyone has a PC.
+												It's important that your website gives users the premium experience, whatever device they are on. <div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="catalogue-item">
+										<div class="catalogue-item-head">
+											<img src="images/reporting.png">
+											<div class="catalogue-overlay">
+												<div class="btn-holder">
+
+												</div>
+											</div>
+										</div>
+										<div class="catalogue-item-body">
+											<div class="catalogue-item-name">Reporting</div>
+											<div style="margin-top: 2rem; letter-spacing: 1.5px; line-height: 2;"> We will provide you with updates on how your site is doing, how many visitors, where they are located.
+												We will also provide SEO reports, giving you better visibility where you rank on search engines. <div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="catalogue-item">
+										<div class="catalogue-item-head">
+											<img src="images/content.png">
+											<div class="catalogue-overlay">
+												<div class="btn-holder">
+
+												</div>
+											</div>
+										</div>
+										<div class="catalogue-item-body">
+											<div class="catalogue-item-name">Content Managment</div>
+											<div style="margin-top: 2rem; letter-spacing: 1.5px; line-height: 2;"> We can also provide content managment, we can update your site with industry related blogs and news articles.
+												Create new or use existing social media accounts and keep you active and engaging on all social media platforms.
+											 <div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
-					<hr class="major" />
+					</div>
 
 					<script src="assets/js/jquery.min.js"></script>
 					<script src="assets/js/skel.min.js"></script>
